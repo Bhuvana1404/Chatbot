@@ -1,5 +1,5 @@
 import streamlit as st
-from google import genai
+import google-generativeai as genai
 from PIL import Image
 from streamlit_mic_recorder import speech_to_text
 
@@ -118,5 +118,6 @@ if final_user_input:
         # 5. Show and save the AI's response
         st.markdown(response.text)
         st.session_state.messages.append(("assistant", [response.text]))
+
 
     st.rerun()
