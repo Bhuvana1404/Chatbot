@@ -1,5 +1,5 @@
 import streamlit as st
-import google-generativeai as genai
+import google.generativeai as genai
 from PIL import Image
 from streamlit_mic_recorder import speech_to_text
 
@@ -121,3 +121,4 @@ if final_user_input:
 
 
     st.rerun()
+
